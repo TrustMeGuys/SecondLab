@@ -20,7 +20,6 @@ int main()
     printf("Введите данные круга:\n");
     x1 = top(x1);
     y1 = top(x1);
-    float diametr, area;
     printf("Введите диметр коружности:\n ");
     scanf("%f", &diametr);
     float area = (pi * diametr * diametr) / 4;
