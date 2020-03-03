@@ -26,7 +26,7 @@ int main()
     float area = (pi * diameter * diameter) / 4;
     float perimetr = diameter / 2;
     int a[2] = {x1, y1};
-    printf("circle(%d %d,%f)\n", a[1], a[2], diameter);
+    printf("circle(%d %d,%f)\n", a[0], a[1], diameter);
     printf("perimetr = %f\n", perimetr);
     printf("area=%f\n", area);
 }
