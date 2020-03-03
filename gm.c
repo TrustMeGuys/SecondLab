@@ -20,12 +20,13 @@ int main()
     printf("Введите данные круга:\n");
     x1 = top(x1);
     y1 = top(x1);
+    float diameter;
     printf("Введите диметр коружности:\n ");
-    scanf("%f", &diametr);
-    float area = (pi * diametr * diametr) / 4;
-    float perimetr = diametr / 2;
+    scanf("%f", &diameter);
+    float area = (pi * diameter * diameter) / 4;
+    float perimetr = diameter / 2;
     int a[2] = {x1, y1};
-    printf("circle(%d %d,%f)", a[1], a[2], diametr);
+    printf("circle(%d %d,%f)", a[1], a[2], diameter);
     printf("perimetr = %f", perimetr);
     printf("area=%f", area);
 }
