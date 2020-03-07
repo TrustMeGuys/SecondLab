@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 int proverka(float diametr)
 {
     if (diametr <= 0)
@@ -29,13 +30,16 @@ int main()
     printf("Введите данные круга:\n");
     x1 = top(x1);
     y1 = top(x1);
+    int a[2] = {x1, y1};
 
     float diameter;
     printf("Введите диаметр коружности:\n ");
     scanf("%f", &diameter);
+
     int b = proverka(diameter);
     float area;
     float perimetr;
+
     if (b == 1) {
         printf("Вы ввели отрицательный или нулевой диаметр\n");
         return 1;
@@ -43,7 +47,6 @@ int main()
         area = (pi * diameter * diameter) / 4;
         perimetr = diameter / 2;
     }
-    int a[2] = {x1, y1};
 
     printf("circle(%d %d,%f)\n", a[0], a[1], diameter);
     printf("perimetr = %f\n", perimetr);
